@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="factoryApp">
+<head>
+  <title>App Factory</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/factoryController.js"></script>
+  <script type="text/javascript" src="js/appFactory.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main ng-controller="FactoryController as factory">
+    <h1 class="floating">Todo's List</h1>
+    <ul>
+      <li ng-repeat="todo in factory.getTodos">{{ todo.title }}</li>
+    </ul>
+  </main>
+</body>
+</html>
